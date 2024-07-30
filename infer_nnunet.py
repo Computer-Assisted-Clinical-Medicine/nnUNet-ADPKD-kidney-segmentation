@@ -25,8 +25,8 @@ if __name__ == '__main__':
     nnUNet_raw = r'nnUNet_raw'
     nnUNet_preprocessed = r'nnUNet_preprocessed'
 
-    indir = join(nnUNet_raw, r'Dataset020_niddk/imagesTs')
-    outdir = join(nnUNet_raw, r'Dataset020_niddk/imagesTs/predictions')
+    indir = join(nnUNet_raw, r'Dataset022_niddkitaly/imagesTs')
+    outdir = join(nnUNet_raw, r'Dataset022_niddkitaly/imagesTs/predictions')
 
     # Check if CUDA is available, and use CPU if it is not
     if torch.cuda.is_available():
@@ -52,7 +52,7 @@ if __name__ == '__main__':
 
     # initializes the network architecture, loads the checkpoint
     predictor.initialize_from_trained_model_folder(
-        join(nnUNet_results, r'Dataset020_niddk/nnUNetTrainer_100epochs__nnUNetPlans__2d'),
+        join(nnUNet_results, r'Dataset022_niddkitaly/nnUNetTrainer_100epochs__nnUNetPlans__2d'),
         use_folds=(0, 1, 2, 3, 4),
         checkpoint_name='checkpoint_final.pth',
     )
