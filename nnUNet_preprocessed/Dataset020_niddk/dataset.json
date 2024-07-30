@@ -1,0 +1,13 @@
+{ 
+ "channel_names": {
+   "1": "T1"
+ }, 
+ "labels": {  
+   "background": 0,
+   "left-kidney": 1,
+   "right-kidney": 2
+ }, 
+ "numTraining": 93, 
+ "numTesting": 41,
+ "file_ending": ".nii.gz",
+ "overwrite_image_reader_writer": "SimpleITKIO"}
