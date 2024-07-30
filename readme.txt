@@ -15,7 +15,7 @@
         docker run --rm --gpus all -v [path\to\patient\folder\]:/app/nnUNet_raw/Dataset020_niddk/imagesTs [docker_image_name:version]
         Note: the values in [] are to be defined by the user
         example:
-        docker run --rm --gpus all -v C:\Users\ar38\Desktop\kidney_infer_nnunet\test_files:/app/nnUNet_raw/Dataset022_niddk/imagesTs kidney_seg:2.0
+        docker run --rm --gpus all -v C:\Users\ar38\Desktop\kidney_infer_nnunet\test_files:/app/nnUNet_raw/Dataset022_niddkitaly/imagesTs kidney_seg:2.0
         (--rm: optional flag that automatically deletes the container after it is finished with predictions
         --gpus all: optional flag to use available gpus on the host machine
         (if no gpu is available then remove this flag so algorithm can run on cpu)
