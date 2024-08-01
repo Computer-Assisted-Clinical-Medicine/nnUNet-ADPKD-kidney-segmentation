@@ -20,6 +20,6 @@
         --gpus all: optional flag to use available gpus on the host machine
         (if no gpu is available then remove this flag so algorithm can run on cpu)
         -v ...: mount folder containing .nii.gz files from host machine to docker container system in /app/...
-        kidney_seg:1.0: docker image name with version 1.0)
+        kidney_seg:1.0: docker image name with version 2.0)
 
 5. The predicted segmentation maps will be saved in the input folder with a folder called "predictions"
